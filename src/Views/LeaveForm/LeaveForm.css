@@ -1,0 +1,136 @@
+.LeaveForm span {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+
+.LeaveForm form {
+  margin: 2rem;
+  padding: 1.5rem;
+  background-color: #f0f0f0;
+  width: fit-content;
+  border-radius: 5px;
+}
+
+.LeaveForm .input {
+  display: flex;
+  flex-direction: column;
+}
+
+.LeaveForm #time {
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.LeaveForm #time div {
+  display: flex;
+  flex-direction: column;
+}
+
+.LeaveForm label {
+  font-size: 0.8rem;
+  margin-bottom: 0.3rem;
+  font-weight: 600;
+}
+
+.LeaveForm input,
+.LeaveForm select,
+.LeaveForm textarea {
+  border: none;
+  outline: none;
+  font-size: 0.8rem;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  padding: 7px 10px;
+  border-radius: 4px;
+}
+
+.btn-group {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+}
+
+.btn-group button {
+  padding: 0.7rem 1rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  border: none;
+  color: var(--primary-color);
+  border-radius: 5px;
+}
+
+.submit {
+  background-color: var(--primary-button);
+}
+
+.submit:active {
+  background-color: var(--active-button);
+}
+
+.reset {
+  background-color: var(--cancel-btn);
+}
+
+.reset {
+  background-color: var(--cancel-active);
+}
+
+@media (max-width: 600px) {
+  .LeaveForm span {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    margin: 0rem 1.5rem;
+  }
+
+  .LeaveForm form {
+    margin: 2rem;
+    padding: 1.5rem;
+    width: 100%;
+    border-radius: 5px;
+  }
+
+  .LeaveForm .input {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .LeaveForm #time {
+    flex-direction: column;
+    gap: 0rem;
+  }
+
+  .LeaveForm label {
+    font-size: 0.7rem;
+    margin-bottom: 0.3rem;
+    font-weight: 500;
+  }
+
+  .LeaveForm input,
+  .LeaveForm select,
+  .LeaveForm textarea {
+    border: none;
+    outline: none;
+    font-size: 0.7rem;
+    border-radius: 4px;
+    margin-bottom: 0.7rem;
+    padding: 5px 8px;
+  }
+
+  .btn-group {
+    display: grid;
+    justify-content: stretch;
+    align-items: center;
+    width: 100%;
+    gap: 0.5rem;
+  }
+
+  .btn-group button {
+    padding: 0.4rem 0.9rem;
+    font-size: 0.8rem;
+    font-weight: 500;
+    border-radius: 3px;
+  }
+}

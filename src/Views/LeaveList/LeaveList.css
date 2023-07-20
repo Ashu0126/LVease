@@ -1,0 +1,20 @@
+.LeaveList ul {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  padding: 2rem;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.LeaveList .noLeave {
+  margin: 2rem;
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+@media (max-width: 600px) {
+  .noLeave {
+    font-size: 0.9rem !important;
+  }
+}

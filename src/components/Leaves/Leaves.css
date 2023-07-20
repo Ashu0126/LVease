@@ -1,0 +1,110 @@
+.Leaves {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px var(--text) solid;
+  padding: 0.7rem 1.5rem;
+  flex-wrap: wrap;
+  border-radius: 5px;
+}
+
+.info-section {
+  line-height: 1.1;
+}
+
+.info-section h3 {
+  font-size: 1.8rem;
+}
+
+.info-section p {
+  font-size: 0.9rem;
+}
+
+.button-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  margin: 0.3rem 0rem;
+}
+
+.button-section button {
+  padding: 0.7rem 1rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  border: none;
+  color: #ffffff;
+  border-radius: 5px;
+}
+
+.approve {
+  background-color: var(--primary-button);
+}
+
+.approve:active {
+  background-color: var(--active-button);
+}
+
+.reject {
+  background-color: var(--cancel-btn);
+}
+
+.reject:active {
+  background-color: var(--cancel-active);
+}
+
+.move {
+  background-color: grey;
+}
+
+.leaveStatus p {
+  font-weight: bold;
+  padding: 0.3rem 0.7rem;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  text-align: center;
+  margin: 0.3rem 0rem;
+}
+
+.leaveStatus .approve {
+  color: var(--primary-button);
+  background-color: #b7f1b7;
+}
+
+.leaveStatus .reject {
+  color: var(--cancel-btn);
+  background-color: rgb(255, 198, 198);
+}
+
+@media (max-width: 600px) {
+  .Leaves {
+    border: 2px var(--text) solid;
+    padding: 0.4rem 1rem;
+    border-radius: 3px;
+  }
+
+  .info-section h3 {
+    font-size: 1.2rem;
+  }
+
+  .info-section p {
+    font-size: 0.7rem;
+  }
+
+  .button-section {
+    gap: 0.3rem !important;
+    margin: 0.5rem 0rem;
+  }
+
+  .button-section button {
+    padding: 0.3rem 0.8rem !important;
+    font-size: 0.7rem !important;
+    border-radius: 3px;
+  }
+
+  .leaveStatus p {
+    padding: 0.2rem 0.5rem;
+    border-radius: 2px;
+    font-size: 0.7rem;
+  }
+}

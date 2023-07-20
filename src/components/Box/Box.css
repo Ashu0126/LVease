@@ -1,0 +1,39 @@
+.Box {
+  display: flex;
+  width: fit-content;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 3px #f0f0f0 solid;
+  padding: 1rem;
+}
+
+.Box h4 {
+  font-size: 4rem;
+  background-color: #f0f0f0;
+  width: 10rem;
+}
+
+.Box p {
+  font-size: 1.1rem;
+  width: 10rem;
+  font-weight: 500;
+}
+
+@media (max-width: 600px) {
+  .Box {
+    padding: 0.5rem;
+  }
+
+  .Box h4 {
+    font-size: 2.5rem;
+    background-color: #f0f0f0;
+    width: 7rem;
+  }
+
+  .Box p {
+    font-size: 0.9rem;
+    width: 7rem;
+    font-weight: 500;
+  }
+}
